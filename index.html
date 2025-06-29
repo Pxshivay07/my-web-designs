@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex-6</title>
+    <style>
+        .logo img {
+            width: 36px;
+
+
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            font-family: "Segoe UI";
+            background-color: rgb(234, 158, 66);
+            border-radius: 10px;
+        }
+
+        .right ul {
+            display: flex;
+            gap: 34px;
+        }
+
+        .right ul li {
+            list-style: none;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            /* when you take your coursor close to the list items your coursor workes like a pointer*/
+
+
+        }
+
+        .end img {
+            width: 36px;
+        }
+
+        .right ul li span {
+            padding: 0 5px;
+
+        }
+
+        .container {
+            height: 823px;
+            width: 1080px;
+            border: 1px solid white;
+            display: grid;
+            align-items: center;
+            justify-items: center;
+            column-gap: 2px;
+            row-gap: 5px;
+            /* grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr; */
+            margin: auto;
+            margin-top: 90px;
+            grid-template-areas: "left middle right"
+                "side article hand"
+                "iron thor odin"
+                "natasa blank blank";
+
+
+
+
+        }
+
+        .image img {
+            height: 10vh;
+            padding: 70px;
+            left: 60px;
+            top: 10px;
+            margin-left: 233px;
+            text-align: center;
+            padding-bottom: 10px;
+
+
+
+        }
+
+
+        .item {
+            border: 1px solid rgb(180, 171, 171);
+            height: 190px;
+            width: 190px;
+            text-align: center;
+            font-size: 2em;
+
+
+
+
+        }
+
+        .item-1 {
+            grid-area: left;
+            background-color: rgb(172, 166, 166);
+        }
+
+        .item-2 {
+            grid-area: middle;
+            background-color: grey;
+        }
+
+        .item-3 {
+            grid-area: right;
+            background-color: grey;
+
+        }
+
+        .item-4 {
+            grid-area: side;
+            background-color: grey;
+
+        }
+
+        .item-5 {
+            grid-area: article;
+            background-color: grey;
+        }
+
+        .item-6 {
+            grid-area: hand;
+            background-color: grey;
+        }
+
+        .item-7 {
+            grid-area: iron;
+            background-color: grey;
+        }
+
+        .item-8 {
+            grid-area: thor;
+            background-color: grey;
+        }
+
+        .item-9 {
+            grid-area: odin;
+            background-color: grey;
+        }
+
+        .item-10 {
+            grid-area: natasa;
+            background-color: grey;
+        }
+
+        .button {
+
+            background-color: red;
+            border: 2px solid black;
+            /* padding:90 20px; */
+            justify-self: end;
+            align-self: end;
+            border-radius: 5px;
+            
+
+
+
+        }
+
+        .button:hover {
+            background-color: black;
+        }
+
+        .image p {
+            text-align: center;
+            font-size: 2em;
+            border: 3px solid yellow;
+            background-color: yellow;
+            justify-items: center;
+            align-items: center;
+            width: auto;
+            justify-content: space-around;
+            margin-left: 300px;
+            margin-right: 300px;
+
+
+        }
+
+        /* .button-grid{
+            opacity: 50%;
+        }*/
+        
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="https://w0.peakpx.com/wallpaper/776/772/HD-wallpaper-rockstar-games-logo-rockstargames-rokcstar-games.jpg"
+                    alt="">
+
+            </div>
+            <div class="right">
+                <ul>
+                    <li><span>product</span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="14"
+                            height="14" color="#000000" fill="none">
+                            <path d="M18 9.00005C18 9.00005 13.5811 15 12 15C10.4188 15 6 9 6 9" stroke="#141B34"
+                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg></li>
+                    <li><span>prising</span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="14"
+                            height="14" color="#000000" fill="none">
+                            <path d="M18 9.00005C18 9.00005 13.5811 15 12 15C10.4188 15 6 9 6 9" stroke="#141B34"
+                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg></li>
+                    <li><span>resourses</span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="14"
+                            height="14" color="#000000" fill="none">
+                            <path d="M18 9.00005C18 9.00005 13.5811 15 12 15C10.4188 15 6 9 6 9" stroke="#141B34"
+                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg></li>
+                    <li><span>aboutus</span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="14"
+                            height="14" color="#000000" fill="none">
+                            <path d="M18 9.00005C18 9.00005 13.5811 15 12 15C10.4188 15 6 9 6 9" stroke="#141B34"
+                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg></li>
+                    <div class="end">
+                        <li><img src="https://www.creativefabrica.com/wp-content/uploads/2019/02/Online-shop-shopping-shop-logo-by-DEEMKA-STUDIO-3-580x406.jpg"
+                                alt="">
+                    </div>
+                    <li>
+                </ul>
+
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="image"><img
+                src="https://static0.gamerantimages.com/wordpress/wp-content/uploads/2019/11/3554-teaser1.jpg" alt="">
+            <p>Download here below</p>
+        </div>
+        <div class="container">
+
+            <div class="item item-1 button-grid">English
+                <a class="button" href="ue_english_64.exe">Download</a>
+            </div>
+            <div class="item item-2 button-grid">Deutsch
+                <a class="button" href="ue_english_64.exe">Download</a>
+            </div>
+            <div class="item item-3 button-grid">Italiano
+                <a class="button" href="ue_english_64.exe">Download</a>
+            </div>
+            <div class="item item-4 button-grid">Español
+                <a class="button" href="ue_english_64.exe">Download</a>
+            </div>
+            <div class="item item-5 button-grid">français
+                <a class="button" href="ue_english_64.exe">Download</a>
+            </div>
+            <div class="item item-6 button-grid">Português brasileiro
+                <a class="button" href="ue_english_64.exe">Download</a>
+            </div>
+            <div class="item item-7 button-grid">日本
+                <a class="button" href="ue_english_64.exe">Download</a>
+            </div>
+            <div class="item item-8 button-grid">한국어
+                <a class="button" href="ue_english_64.exe">Download</a>
+            </div>
+            <div class="item item-9 button-grid">华语
+                <a class="button" href="ue_english_64.exe">Download</a>
+            </div>
+            <div class="item item-10 button-grid">華語
+                <a class="button" href="ue_english_64.exe">Download</a>
+            </div>
+        </div>
+    </main>
+    <footer></footer>
+
+</body>
+
+</html>
